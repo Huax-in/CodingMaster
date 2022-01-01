@@ -36,7 +36,8 @@ PrintString:
     ret
 
 SayHello db 'Hi there,I am Huax!'
-         db 0x00
+            ;0x0d回车键 0x0a换行键
+        db 0x0d, 0x0a, 0x00
 SayByeBye db 'Thank you can handle it,bay!'
           db 0x00
 
